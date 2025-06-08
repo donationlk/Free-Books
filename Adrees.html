@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>නොමිලේ පාසැල් උපකරන.</title>
+  <link rel="icon" type="image/png" href="ChatGPT Image Jun 8, 2025, 05_22_27 PM.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph Meta Tags for sharing preview -->
+  <meta property="og:title" content="🎁 Join and Win Gifts!">
+  <meta property="og:description" content="සියලුම යාළු යෙහෙළියන්ට මේ දැනගැනීමට බෙදාහරින  ලෙස කාරුණිකව දන්වා සිටිමි. තෑගි ඔබගේ නිවසටම!">
+  <meta property="og:image" content="https://example.com/your-image.png"> <!-- 🔁 Replace with actual image URL -->
+  <meta property="og:url" content="https://example.com/share-page.html"> <!-- 🔁 Replace with actual URL -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .btn-save {
+      width: 100%;
+      background-color: orange;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .share-box {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .share-btn {
+      margin-top: 30px;
+      background: linear-gradient(to bottom, #48f0b0, #2fca1a);
+      border-radius: 30px;
+      padding: 15px 40px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #d9f100;
+      border: 2px solid #ffcccc;
+      text-shadow: 1px 1px 3px #900;
+      box-shadow: 0 5px 20px rgba(0, 255, 13, 0.6);
+      font-family: 'Arial', sans-serif;
+      cursor: pointer;
+    }
+    .continue-btn {
+      display: none;
+      margin-top: 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    #progressContainer {
+      display: none;
+      margin-top: 20px;
+    }
+    #progressWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #007bff;
+      padding: 3px;
+      border-radius: 5px;
+    }
+    #progressBarWrapper {
+      flex-grow: 1;
+      background-color: #e0e0e0;
+      border-radius: 3px;
+      overflow: hidden;
+      height: 25px;
+    }
+    #progressBar {
+      width: 0%;
+      background-color: #007bff;
+      height: 100%;
+      transition: width 0.4s;
+    }
+    #progressText {
+      margin-left: 10px;
+      min-width: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <center><h1>අවසන් අදියර....</h1></center>
+
+  <form id="addressForm">
+    <input type="text" placeholder="Province" required>
+    <input type="text" placeholder="District" required>
+    <input type="text" placeholder="City" required>
+    <input type="text" placeholder="Street/Home" required>
+    <input type="text" placeholder="Apt / Suite / Other (optional)">
+    <input type="text" placeholder="ZIP code" required>
+    <input type="tel" placeholder="Phone number" required>
+    <input type="text" placeholder="Name" required>
+
+    <button type="button" class="btn-save" onclick="saveForm()">Save</button>
+  </form>
+
+  <div class="share-box" id="shareBox">
+    <center><p><strong>සබැදිය බෙදා මිතුරන් හා බෙදා ගන්න.</strong></p></center> 
+    <button type="button" class="share-btn" onclick="shareLink()">Share</button>
+  </div>
+
+  <div id="progressContainer">
+    <div id="progressWrapper">
+      <div id="progressBarWrapper">
+        <div id="progressBar"></div>
+      </div>
+      <div id="progressText">0%</div>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="test.html"><button id="continueBtn" class="continue-btn" onclick="alert('saving your data...')">Continue</button></a>
+  </div>
+
+  <script>
+    const form = document.getElementById('addressForm');
+    const shareBox = document.getElementById('shareBox');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const continueBtn = document.getElementById('continueBtn');
+
+    function saveForm() {
+      const inputs = form.querySelectorAll("input");
+      let valid = true;
+
+      inputs.forEach(input => {
+        if (input.hasAttribute("required") && input.value.trim() === "") {
+          valid = false;
+        }
+      });
+
+      if (!valid) {
+        alert("Please fill all required fields!");
+        return;
+      }
+
+      inputs.forEach(input => input.value = '');
+
+      form.style.display = 'none';
+
+      alert("Share this link to your friends!");
+      shareBox.style.display = 'block';
+      progressContainer.style.display = 'block';
+    }
+
+    function shareLink() {
+      const shareData = {
+        title: '🎁 Join and Win Gifts!',
+        text: 'මෙය කිසිදු රැවටීමකින් තොර වැඩසටහනක් වන අතර ඔබේ තෑගි නිවසටම ලැබෙනු ඇත!',
+        url: 'https://example.com/share-page.html' // 🔁 Replace this with your real URL
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData)
+          .then(() => {
+            let percentage = parseInt(progressBar.style.width) || 0;
+
+            if (percentage < 60) {
+              percentage += 20;
+            } else if (percentage < 90) {
+              percentage += 15;
+            } else if (percentage < 100) {
+              percentage += 5;
+            }
+
+            if (percentage > 100) percentage = 100;
+
+            progressBar.style.width = percentage + '%';
+            progressText.textContent = percentage + '%';
+
+            if (percentage >= 100) {
+              alert('ඔබ share කිරීම් අවසන් කළාය ✅ දැන් Continue button එක ක්‍රියාත්මකයි!');
+              continueBtn.style.display = 'inline-block';
+            }
+          })
+          .catch((err) => {
+            console.error('Error sharing:', err);
+          });
+      } else {
+        alert("Your device doesn't support sharing 😢");
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>   <link rel="icon" type="image/png" href="ChatGPT Image Jun 8, 2025, 05_22_27 PM.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>නොමිලේ පාසැල් උපකරන.</title>
+  <style>
+ 
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f0f0f0;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .headline {
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+      padding: 10px;
+    }
+
+    .subheadline {
+      font-size: 22px;
+      color: #00aa00;
+      font-weight: bold;
+    }
+
+    .main-text {
+      padding: 10px 20px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .button {
+      font-size: 18px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      flex: 1 1 45%;
+      max-width: 200px;
+    }
+
+    .yes { background: #d4002b; color: white; }
+    .no { background: #000; color: white; }
+
+    .hidden {
+      display: none;
+    }
+
+    .dots {
+      margin: 15px 0;
+    }
+
+    .dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    .dot.black { background: rgb(255, 0, 0); }
+    .dot.red { background: #000000; }
+
+    input[type=number] {
+      width: 80%;
+      max-width: 250px;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .fb-section {
+      border-top: 1px solid #ccc;
+      padding: 10px 20px;
+      background: #fafafa;
+      text-align: left;
+    }
+
+    .fb-info {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .comment {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .comment img {
+      border-radius: 50%;
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .comment-body {
+      background: #eaeaea;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+
+    .comment-body strong {
+      color: #2d88ff;
+    }
+
+    .meta {
+      font-size: 12px;
+      color: #666;
+    }
+
+    @media (max-width: 480px) {
+      .headline, .subheadline {
+        font-size: 18px;
+      }
+      .button {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="f:\free books\ChatGPT Image Jun 8, 2025, 05_22_27 PM.png" class="header-img" alt="promo">
+
+  <div class="headline">ලාංකීය සිසුන් සදහා නොමිලේ පාසැල් උපකරණ. </div>
+  <div class="subheadline">Free school supplies for Sri Lankan students.</div>
+
+  <div class="main-text" id="question">
+    ඔබ මෙම වැඩසටහනට සම්බන්ධ වීමට කැමතිද?
+  </div>
+
+  <div class="buttons" id="q1-buttons">
+    <button class="button yes" onclick="showAge()">ඔව්</button>
+    <button class="button no" onclick="alert('ඔබේ සුදුසුකම් අඩුයි')">නැත</button>
+  </div>
+
+  <div id="age-form" class="hidden">
+    <div class="main-text">ඔබේ දරුවාගේ වයස:</div>
+    <input type="number" id="age" placeholder="වයස..."><br><br>
+    <button class="button yes" onclick="submitAge()">OK</button>
+  </div>
+
+  <div id="q2" class="hidden">
+    <div class="main-text">ඔබ දරුවාගේ:</div>
+    <div class="buttons">
+      <button class="button yes" onclick="nextQuestion()">මව</button>
+      <button class="button yes" onclick="nextQuestion()">පියා</button>
+    </div>
+  </div>
+
+<!-- Gift boxes hidden initially -->
+<div class="buttons hidden" id="gift-boxes">
+  <h5>මෙම වැඩ සටහන ක්‍රියාත්මක වීමට අවශ්‍ය මූල්‍යමය ප්‍රතිලාභ ලැබෙන්නේ වෙළෙඳ දැන්වීම් මගිනි. පහත වෙළෙඳ දැන්වීම් ත්‍රිත්වය නැරඹීමෙන් අනතුරුව තෑග්ග ලබාගැනීමට කාරුණික වන්න.</h5>
+
+  <button class="button yes" id="gift1" onclick="openAd('https://www.profitableratecpm.com/sdkb4ifpg?key=39ce5af0d62e85fce4c169c2ff63e9e2')">ADDS 01</button>
+  <button class="button yes" id="gift2" onclick="openAd('https://www.profitableratecpm.com/w8dxap9uyi?key=0664284f91da9f74c883d132855a0678')">ADDS 02</button>
+  <button class="button yes" id="gift3" onclick="openAd('https://www.profitableratecpm.com/hsjygvri0?key=bb67387f85847bf73f8d0bd5a943a6e1')">ADDS 03</button>
+</div>
+
+<script>
+  function openAd(url, buttonId) {
+    window.open(url, '_blank');
+    document.getElementById(buttonId).style.display = 'none';
+  }
+</script>
+
+
+  <div class="buttons hidden" id="final-gift-container">
+    <button class="button yes" id="finalGift">🎉 දිනුම් පරික්ෂා කරන්න</button>
+  </div>
+
+  <div class="dots" id="dots">
+    <div class="dot black" id="dot1"></div>
+    <div class="dot red" id="dot2"></div>
+    <div class="dot red" id="dot3"></div>
+    <div class="dot red" id="dot4"></div>
+  </div>
+
+  <div class="fb-section">
+    <div class="fb-info">
+      <strong>11K</strong> Like · today 7,000ක් · today 57 Comment
+    </div>
+     <div class="comment">
+      <img src="WhatsApp Image 2025-06-08 at 17.50.19.jpeg">
+      <div class="comment-body">
+        <strong>Thanushi sanjana</strong><br>
+        godak watinawa. <strong></strong> thank you.
+        <div class="meta">2m · Like · Reply</div>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="depositphotos_44309759-stock-photo-young-indian-man-outdoors.jpg">
+      <div class="comment-body">
+        <strong>lalith kumara</strong><br>
+        මට <strong>2000</strong> ක විතර තෑගි ඇවිත්.
+        <div class="meta">2m · Like · Reply</div>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="WhatsApp Image 2025-06-08 at 17.50.20.jpeg">
+      <div class="comment-body">
+        <strong>Nesara Dewmini</strong>
+        ගෙදරටම ගෙනත් දුන්නා,බොහොම ස්තුතීයි
+        <div class="meta">1m · Like · Reply</div>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="WhatsApp Image 2025-06-08 at 17.33.38.jpeg">
+      <div class="comment-body">
+        <strong>Saduni lakshani</strong><br>
+        ගොඩක් වටිනව.හැබැයි currior service එකේ අය පොත් ටිකක් තෙමල.thank you ඒත්.
+        <div class="meta">4m · Like · Reply</div>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="images.jpg">
+      <div class="comment-body">
+        <strong>SL kavi</strong><br>
+        මෙක කොච්චර කරත් මගෙ එක පිරෙන්නනේ,කොහොමද කරන්නේ
+        <div class="meta">4m · Like · Reply</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function showAge() {
+  document.getElementById('q1-buttons').classList.add('hidden');
+  document.getElementById('age-form').classList.remove('hidden');
+  updateDots(2);
+}
+
+function submitAge() {
+  const age = document.getElementById('age').value;
+  if (!age || age < 1) {
+    alert("කරුණාකර වලංගු වයසක් ලබා දෙන්න.");
+    return;
+  }
+  document.getElementById('age-form').classList.add('hidden');
+  document.getElementById('q2').classList.remove('hidden');
+  updateDots(3);
+}
+
+function nextQuestion() {
+  document.getElementById('q2').classList.add('hidden');
+  document.getElementById('question').innerText = "ඔබේ තොරතුරු සාර්ථකව සුරක්ෂිතයි.";
+  document.getElementById('gift-boxes').classList.remove('hidden');
+  updateDots(4);
+}
+
+function updateDots(activeDot) {
+  for (let i = 1; i <= 4; i++) {
+    const dot = document.getElementById('dot' + i);
+    dot.className = 'dot ' + (i === activeDot ? 'black' : 'red');
+  }
+}
+
+let clickedCount = 0;
+const giftButtons = ['gift1', 'gift2', 'gift3'];
+const messages = [
+  "ඔබට 2000ක් වටිනා ත්‍යාග!",
+  "සුභ පැතුම්! ඔබට රුපියල් 1500ක ත්‍යාග",
+  "ඔබට B5 ප්‍රමානයේ පොත් 10ක් 🎉",
+  "සුබ පැතුම්",
+  "ඔබට වටිනා පාසල් බැගයක්"
+];
+
+giftButtons.forEach(id => {
+  document.getElementById(id).addEventListener('click', function () {
+    this.disabled = true;
+    clickedCount++;
+    if (clickedCount === 3) {
+      alert("ඔබ දැන් වීම් තුනම නරඹා ඇත!");
+      document.getElementById('final-gift-container').classList.remove('hidden');
+    }
+  });
+});
+
+document.getElementById('finalGift').addEventListener('click', function () {
+  const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+  alert(randomMsg);
+  window.location.href = "F:\programing\/Adrees.html";
+});
+</script>
+
+</body>
+</html>
